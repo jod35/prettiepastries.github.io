@@ -1,0 +1,110 @@
+:root{
+  --purple:brown;
+  --pinkish: orange;
+  --white:white;
+  --round:300px;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: ;
+    padding: 20px;
+    margin: 0;
+}
+header ul{
+    padding: 20px;
+    list-style-type: none;
+    background-color:var(--pinkish);
+    border-top-right-radius: var(--round);
+    border-bottom-right-radius: var(--round);
+    border-top-left-radius: var(--round);
+    border-bottom-left-radius: var(--round);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.363);
+
+}
+header li a{
+    color: var(--white);
+    text-transform:uppercase;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+header li{
+    display: inline;
+    margin: 20px;
+}
+
+header li a:hover{
+    background-color: var(--purple);
+    color:var(--pinkish);
+}
+.container{
+    padding: 20px;
+}
+.Welcome{
+    height: 30vh;
+    padding: 100px;
+    
+    border-bottom-right-radius: 300px;
+     border-bottom-left-radius: 300px;
+     
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.363);
+     text-align: center;
+     justify-content: center;
+     animation-name: display;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+}
+
+@keyframes display{
+    0%{
+        background-color: orange;
+        color: brown;
+    }
+    50%{
+        background-color:var(--white);
+        color: brown;
+    }
+    100%{
+        background-image: url(images/welcome.jpeg);
+        color: var(--white);
+        transform: scale(1.0);
+    }
+}
+.login{
+    min-height: 500px;
+    background-image: linear-gradient(var(--pinkish) ,var(--purple));
+    width: 80%;
+    padding: 20px;
+    color: var(--white);
+    font-weight: bolder;
+    margin: auto;
+    border-radius: 7px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.363);
+}
+.form{
+  padding: 10px;
+
+}
+.login a{
+    color:var(--white);
+    font-weight: 900;
+}
+
+.myfield{
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 80%;
+}
+#mybtn{
+    background-color:var(--pinkish);
+    padding: 20px;
+    text-transform: uppercase;
+    border: none;
+    color: var(--white);
+    border-radius: 7px;
+}
