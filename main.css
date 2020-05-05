@@ -352,7 +352,7 @@ header li a:hover{
     .overlay a{
         padding: 20px;
         text-decoration: none;
-        color: white;
+        color: var(--orange);
     }
 }
 
