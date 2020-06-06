@@ -1,5 +1,6 @@
 const nav_bar = document.querySelector("nav");
 const nav_links = document.querySelectorAll(".link");
+const logo = document.querySelector(".logo");
 
 window.onscroll = function () {
   shrinkNavOnscroll();
@@ -12,6 +13,8 @@ function shrinkNavOnscroll() {
   ) {
     nav_bar.style.backgroundImage = "linear-gradient(24deg, coral, brown)";
     nav_bar.style.padding = "15px";
+    nav_bar.style.zIndex = "2";
+    logo.style.color = "white";
 
     for (let i = 0; i < nav_links.length; i++) {
       nav_links[i].style.color = "white";
