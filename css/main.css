@@ -1,0 +1,92 @@
+:root {
+  --light: rgb(243, 209, 149);
+  --br: brown;
+  --cr: coral;
+  --lbr: rgba(165, 42, 42, 0.411);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../images/w2.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.384);
+  color: var(--light);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.link {
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+.active {
+  border-bottom: 3px solid var(--light);
+}
+
+.nabar-item {
+  display: inline;
+  padding: 20px;
+}
+
+.nabar-item:hover {
+  background-color: var(--br);
+  font-weight: bold;
+}
+.welcome {
+  padding: 20%;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: var(--light);
+  line-height: 2;
+  height: 100vh;
+}
+.welcome-msg {
+  font-size: 2.5rem;
+}
+
+.motto {
+  font-size: 2rem;
+}
+.mybtn {
+  padding: 20px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: var(--light);
+  background: var(--br);
+  /* border: 1px solid var(--light); */
+}
+
+.mybtn:hover {
+  background-color: var(--lbr);
+  color: white;
+}
+
+.mybtn-lg {
+  font-size: 1.2rem;
+}

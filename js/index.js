@@ -1,19 +1,32 @@
-const nav_button=document.querySelector('i');
-const overlay =document.querySelector('.overlay');
-const close_button=document.getElementById('close-btn');
+const nav_bar = document.querySelector("nav");
+const nav_links = document.querySelectorAll(".link");
 
-overlay.style.display="none";
+window.onscroll = function () {
+  shrinkNavOnscroll();
+};
 
+function shrinkNavOnscroll() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    nav_bar.style.backgroundImage = "linear-gradient(24deg, coral, brown)";
+    nav_bar.style.padding = "15px";
 
-nav_button.addEventListener('click',()=>{
-    overlay.style.display="flex";
-    // overlay.style.height="100%";
-    // overlay.style.position="absolute"
-});
+    for (let i = 0; i < nav_links.length; i++) {
+      nav_links[i].style.color = "white";
+    }
+  } else {
+    nav_bar.style.background = "rgba(0, 0, 0, 0.466)";
+    nav_bar.style.padding = "30px";
+  }
+}
 
-close_button.addEventListener('click',()=>{
-    overlay.style.display="none";
-})
+for (let x = 0; x < nav_links.length; x++) {
+  nav_links[x].addEventListener("click", function () {
+    let current = document.querySelectorAll(".active");
 
-
-
+    current[0].className = current[0].className.replace("active", "");
+    this.classList.add("active");
+  });
+}
