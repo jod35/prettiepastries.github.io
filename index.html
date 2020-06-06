@@ -18,15 +18,15 @@
 
   <body>
     <!--Header and Nav  -->
-    <header>
+    <header id="main">
       <nav>
         <h1 class="logo">Pretty Pastries</h1>
         <ul class="navbar">
           <li class="nabar-item">
-            <a href="index.html" class="link active">Home</a>
+            <a href="#main" class="link active">Home</a>
           </li>
           <li class="nabar-item">
-            <a href="#about" class="link">Contacts</a>
+            <a href="#contacts" class="link">Contacts</a>
           </li>
           <li class="nabar-item">
             <a href="#services" class="link">services</a>
@@ -40,8 +40,9 @@
         </ul>
       </nav>
       <div class="welcome">
-        <h1 class="text-center welcome-msg">welcome to prettie Pastries</h1>
-        <h3 class="text-center motto">The best Pastry Provider</h3>
+        <h1 class="welcome-msg">welcome to prettie Pastries</h1>
+        <h3 class="motto">Your Quality Pastry Maker</h3>
+        <br />
         <a href="#about" id="about" class="mybtn-lg mybtn btn-about"
           >About Chef Prettie
           <i class="fa fa-chevron-right" aria-hidden="true"></i
@@ -50,68 +51,107 @@
     </header>
 
     <!-- Main Page Content -->
-    <main>
-      <!-- About Div -->
-      <div class="about" id="about">
-        <h2>About Chef Pretty</h2>
-        <div class="about-desc">
-          <div class="about-img">
-            <img src="images/w2.jpg" alt="Photo" />
-          </div>
-          <div class="about-description">
+
+    <!-- About Div -->
+    <div class="about" id="about">
+      <h2>About Chef Pretty</h2>
+      <div class="about-desc">
+        <div class="about-img">
+          <img
+            src="images/w3.jpg"
+            class="content-img"
+            alt="Photo"
+            width="500"
+          />
+        </div>
+        <div class="about-description">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem quae cupiditate omnis deserunt velit assumenda
+            dolores repellat facere consectetur deleniti dicta quis animi porro
+            labore tempora, quia similique ducimus sapiente ut a aliquam facilis
+            necessitatibus voluptatibus? Nemo tempore earum optio ad quo facere
+            laborum nisi incidunt illo esse, laboriosam fuga.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services" id="services">
+      <h2 class="text-center">What we Offer</h2>
+      <div class="serv-list">
+        <div class="box">
+          <img
+            src="images/w2.jpg"
+            class="round serv-img"
+            alt="photo"
+            srcset=""
+            width="200"
+          />
+          <div class="serv-desc">
+            <h3>Quality Services</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Exercitationem quae cupiditate omnis deserunt velit assumenda
-              dolores repellat facere consectetur deleniti dicta quis animi
-              porro labore tempora, quia similique ducimus sapiente ut a aliquam
-              facilis necessitatibus voluptatibus? Nemo tempore earum optio ad
-              quo facere laborum nisi incidunt illo esse, laboriosam fuga.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              autem.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/w2.jpg"
+            class="serv-img round"
+            alt="photo"
+            srcset=""
+            width="200"
+          />
+          <div class="serv-desc">
+            <h3>Quality Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              autem.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/w2.jpg"
+            class="round serv-img"
+            alt="photo"
+            srcset=""
+            width="200"
+          />
+          <div class="serv-desc">
+            <h3>Quality Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              autem.
             </p>
           </div>
         </div>
       </div>
-
-      <div class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="serv-list">
-          <div class="box">
-            <img src="images/w2.jpg" class="round" alt="photo" srcset="" />
-            <div class="serv-desc">
-              <h3>Quality Services</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
-                autem.
-              </p>
-            </div>
+    </div>
+    <!-- Contacts Div -->
+    <div class="contacts" id="contacts">
+      <h2 class="text-center">Contact us</h2>
+      <div class="contact-list">
+        <div class="social-icons">
+          <div class="icon">
+            <a href="#"> <i class="fa fa-facebook fa-3x"></i></a>
           </div>
-
-          <div class="box">
-            <img src="images/w2.jpg" class="round" alt="photo" srcset="" />
-            <div class="serv-desc">
-              <h3>Quality Services</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
-                autem.
-              </p>
-            </div>
+          <div class="icon">
+            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
           </div>
-
-          <div class="box">
-            <img src="images/w2.jpg" class="round" alt="photo" srcset="" />
-            <div class="serv-desc">
-              <h3>Quality Services</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
-                autem.
-              </p>
-            </div>
+          <div class="icon">
+            <a href="#"
+              ><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="#"> <i class="fa fa-instagram fa-3x"></i></a>
           </div>
         </div>
-      </div>
-      <!-- Contacts Div -->
-      <div class="contacts" id="contacts">
-        <h2>Contact us</h2>
-        <div class="social-icons"></div>
         <div class="form">
           <form action="" method="post">
             <label for="name">*Name</label>
@@ -137,14 +177,15 @@
               name=""
               id=""
               cols="30"
-              rows="10"
+              rows="5"
               class="myfield"
+              placeholder="Your Message"
             ></textarea>
             <input type="submit" value="Send" class="mybtn" />
           </form>
         </div>
       </div>
-    </main>
+    </div>
     <footer>
       &copy; Prettie Pastries 2020
     </footer>
