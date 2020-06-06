@@ -3,6 +3,7 @@
   --br: brown;
   --cr: coral;
   --lbr: rgba(165, 42, 42, 0.411);
+  --wh: white;
 }
 
 * {
@@ -11,11 +12,14 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 ul {
   list-style: none;
 }
@@ -89,4 +93,85 @@ nav {
 
 .mybtn-lg {
   font-size: 1.2rem;
+}
+
+.about {
+  min-height: 100vh;
+  background-color: var(--br);
+  padding: 10%;
+  color: var(--wh);
+}
+.about-desc {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.about-img {
+  padding: 20px;
+}
+
+.round {
+  border-radius: 50%;
+}
+.services {
+  min-height: 100vh;
+  color: var(--light);
+  background-image: linear-gradient(24deg, var(--cr), var(--br));
+  padding: 10%;
+}
+.serv-list {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+.text-center {
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+  background-color: var(--br);
+  width: 30%;
+  height: 80%;
+  padding: 20px;
+  color: var(--light);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.404);
+  border-radius: 8px;
+}
+.contacts {
+  padding: 10%;
+  color: var(--br);
+}
+.contact-list {
+  color: var(--br);
+  height: 100vh;
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+
+  padding: %;
+}
+.icon {
+  padding: 20px;
+}
+.icon i {
+  color: var(--br);
+}
+
+.form {
+  width: 50%;
+  padding: 20px;
+}
+.myfield {
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid brown;
+  outline: none;
+  width: 100%;
 }
