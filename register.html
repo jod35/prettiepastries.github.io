@@ -5,23 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prettie Pastries</title>
   </head>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+  />
+
   <body>
     <!--Header and Nav  -->
-    <header>
+
+    <nav>
       <h1 class="logo">Pretty Pastries</h1>
       <ul class="navbar">
-        <li class="nabar-item"><a href="index.html" class="link">Home</a></li>
-        <li class="nabar-itme">
-          <a href="#about" class="link">Contacts</a>
-        </li>
         <li class="nabar-item">
-          <a href="#services" class="link">services</a>
+          <a href="index.html" class="link active">Home</a>
         </li>
-        <li class="nabar-item"><a href="login.html" class="link">login</a></li>
+
+        <li class="nabar-item">
+          <a href="login.html" class="link">login</a>
+        </li>
         <li class="nabar-item">
           <a href="register.html" class="link">Sign Up</a>
         </li>
       </ul>
-    </header>
+    </nav>
+    <div class="register-form">
+      <h2 class="">Sign Up</h2>
+      <form action="" method="post">
+        <label for="username">*Username</label>
+        <input type="text" name="username" id="username" class="myfield" />
+        <label for="username">*Email</label>
+        <input type="text" name="email" id="username" class="myfield" />
+        <label for="password">*Password</label>
+        <input type="password" name="password" id="password" class="myfield" />
+
+        <label for="password">*Confirm Password</label>
+        <input type="password" name="Confirm" id="password" class="myfield" />
+        <input type="submit" value="login" class="mybtn" />
+      </form>
+      <br />
+      <small>
+        Already have an Account,
+        <a href="login.html" style="color: brown;">Login</a>
+      </small>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -83,6 +83,9 @@ nav {
   margin-top: 20px;
   color: var(--light);
   background: var(--br);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
   /* border: 1px solid var(--light); */
 }
 
@@ -174,4 +177,16 @@ nav {
   border-bottom: 2px solid brown;
   outline: none;
   width: 100%;
+}
+
+.login-form {
+  height: 100vh;
+  padding: 20%;
+  color: var(--br);
+}
+
+.register-form {
+  height: 100vh;
+  padding: 10%;
+  color: var(--br);
 }
