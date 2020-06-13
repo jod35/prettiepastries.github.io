@@ -125,6 +125,7 @@ nav {
 .serv-list {
   display: flex;
   margin-top: 30px;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .text-center {
@@ -133,13 +134,12 @@ nav {
 
 .box {
   text-align: center;
-  background-color: var(--br);
-  width: 30%;
   height: 80%;
-  padding: 20px;
-  color: var(--light);
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.404);
-  border-radius: 8px;
+  padding: 0;
+}
+
+.box1 {
+  background: url("../images/wedding.jpeg.jpeg") no-repeat center center/cover;
 }
 .contacts {
   padding: 10%;
